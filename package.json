@@ -1,0 +1,76 @@
+{
+  "name": "test-father",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/cjs/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "authors": [],
+  "license": "MIT",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
+  "devDependencies": {
+    "father": "^4.5.0-rc.0"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.1.0",
+    "@ant-design/pro-card": "1.20.22",
+    "@ant-design/pro-field": "1.36.7",
+    "@ant-design/pro-form": "1.74.7",
+    "@ant-design/pro-provider": "1.10.0",
+    "@ant-design/pro-utils": "1.45.3",
+    "@babel/runtime": "^7.18.0",
+    "@types/classnames": "^2.2.7",
+    "@types/enzyme": "^3.10.3",
+    "@types/history": "^4.7.7",
+    "@types/jest": "^27.0.3",
+    "@types/lodash.merge": "^4.6.7",
+    "@types/memoize-one": "^5.1.2",
+    "@types/mockjs": "^1.0.3",
+    "@types/node": "^14.0.26",
+    "@types/react-helmet": "^6.0.0",
+    "@types/react-intl": "^3.0.0",
+    "@types/react-responsive": "^8.0.1",
+    "@types/shallowequal": "^1.1.1",
+    "@types/warning": "^3.0.0",
+    "@types/xhr-mock": "^2.0.0",
+    "antd": "^4.20.0 ",
+    "babel-jest": "^27.3.1",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-import": "^1.12.2",
+    "babel-types": "^6.26.0",
+    "classnames": "^2.2.6",
+    "moment": "^2.24.0",
+    "omit.js": "^2.0.2",
+    "rc-util": "^5.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-sortable-hoc": "^2.0.0",
+    "typescript": "^4.5",
+    "unstated-next": "^1.1.0",
+    "use-json-comparison": "^1.0.5",
+    "use-media-antd-query": "^1.1.0"
+  },
+  "peerDependencies": {
+    "rc-field-form": "^1.22.0",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+}
